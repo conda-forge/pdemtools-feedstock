@@ -1,5 +1,5 @@
 {% set name = "pdemtools" %}
-{% set version = "0.8.1" %}
+{% set version = "0.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pdemtools-{{ version }}.tar.gz
-  sha256: 17599c439e5dd21efd02c62fbb141a781cb777e327d31614f107377952393d1b
+  sha256: d361f2d0e3dc5b35ae04ff0c4f7f155c92f21673f74cce3a1b248a09a43a1b81
 
 build:
   noarch: python
