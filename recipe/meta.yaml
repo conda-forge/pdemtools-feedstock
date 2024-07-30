@@ -21,6 +21,7 @@ requirements:
   run:
     - python >=3.10
     - rioxarray
+    - xarray
     - rasterio
     - geopandas
     - pandas
@@ -31,6 +32,7 @@ requirements:
     - scipy
     - numba
     - pyarrow
+    - fiona
 
 test:
   imports:
