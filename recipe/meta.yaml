@@ -1,5 +1,5 @@
 {% set name = "pdemtools" %}
-{% set version = "0.8.4" %}
+{% set version = "0.8.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pdemtools-{{ version }}.tar.gz
-  sha256: bda67ec2db8d8f0626636628137e47c13b9efe3a415eebbf3f79965af62e312a
+  sha256: d4fd11b6a95b7d68a1aa21fdaef8a5b2c6cd3db59f9257bc5ba6bcd09704265b
 
 build:
   noarch: python
@@ -21,7 +21,6 @@ requirements:
   run:
     - python >=3.10
     - rioxarray
-    - xarray
     - rasterio
     - geopandas
     - pandas
@@ -32,7 +31,6 @@ requirements:
     - scipy
     - numba
     - pyarrow
-    - fiona
 
 test:
   imports:
