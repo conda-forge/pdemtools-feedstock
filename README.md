@@ -149,6 +149,3 @@ Feedstock Maintainers
 
 * [@trchudley](https://github.com/trchudley/)
 
-
-<!-- dummy commit to enable rerendering -->
-
