@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "pdemtools" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pdemtools-{{ version }}.tar.gz
-  sha256: d3775b95b271033a21b6d73360e7c8063348c9e7a751678b18260859d3d99b15
+  sha256: f1cd9e7712d3c3c136aa355a224383e875c7c2aff5df0295afbff5ae333a9292
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   build:
