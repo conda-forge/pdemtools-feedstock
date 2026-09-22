@@ -22,7 +22,7 @@ requirements:
   build:
     - setuptools
   host:
-    - python ${{ python_min }}
+    - python ${{ python_min }}.*
     - pip
     - setuptools
   run:
