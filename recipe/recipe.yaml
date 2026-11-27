@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pdemtools
-  version: "1.2.5"
+  version: "1.2.6"
   python_min: "3.12"
 
 package:
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/pdemtools-${{ version }}.tar.gz
-  sha256: 2189a3671e0e88b8463fedfd76ccf0f6406efaca8cdc1a559f1d62b9a99fd6cb
+  sha256: 4e06505d9513315329fd6fbf3f26f0544cb03794b1eb1af5d5a8ecfce714ef1a
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
